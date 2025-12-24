@@ -1,0 +1,80 @@
+.summary {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 32px 0;
+  color: #6b7280;
+}
+
+.servicesList {
+  margin-bottom: 24px;
+}
+
+.totalSection {
+  border-top: 2px solid #d1d5db;
+  padding-top: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalLabel {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.totalAmount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.checkoutButton {
+  width: 100%;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #059669;
+  }
+}
+
+@media (min-width: 1024px) {
+  .summary {
+    position: sticky;
+    top: 16px;
+  }
+}
